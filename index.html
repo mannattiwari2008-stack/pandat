@@ -1,153 +1,439 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<!-- This site is hosted on Netlify. Anyone can build and deploy a site
-     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=3781ec53-ae0d-4966-8646-b6f0e2816260
-     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
-<meta name="hosting-provider" content="Netlify">
-<meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=3781ec53-ae0d-4966-8646-b6f0e2816260">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏 | Free Trading Community</title>
-<meta name="description" content="Join 𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏, a free Telegram trading community." />
-<meta name="theme-color" content="#0a0d0c" />
-<meta name="robots" content="index, follow" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b0a">
+<meta name="description" content="VENOM X PANDAT - Free Trading Community">
+<title>VENOM X PANDAT | Free Trading Community</title>
 
-<!-- Open Graph -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ubiquitous-biscuit-c86d41.netlify.app/" />
-<meta property="og:title" content="𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏 | Free Trading Community" />
-<meta property="og:description" content="Join 𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏, a free Telegram trading community." />
-<meta property="og:image" content="https://ubiquitous-biscuit-c86d41.netlify.app/img/og-cover.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:site_name" content="VENOM X PANDAT" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏 | Free Trading Community" />
-<meta name="twitter:description" content="Join 𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏, a free Telegram trading community." />
-<meta name="twitter:image" content="https://ubiquitous-biscuit-c86d41.netlify.app/img/og-cover.jpg" />
+:root{
+  --bg:#080b0a;
+  --card:#101512;
+  --card2:#0d120f;
+  --green:#35e0a0;
+  --green2:#20b87e;
+  --text:#f4f7f5;
+  --muted:#8d9993;
+  --line:rgba(255,255,255,.09);
+}
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0d0c'/%3E%3Cpath d='M8 22 14 12 20 18 24 8' stroke='%2334e0a1' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+*{margin:0;padding:0;box-sizing:border-box}
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+html{scroll-behavior:smooth}
 
-<link rel="stylesheet" href="/css/style.css" />
+body{
+  min-height:100vh;
+  color:var(--text);
+  background:
+    radial-gradient(circle at 50% -10%,rgba(53,224,160,.13),transparent 35%),
+    radial-gradient(circle at 10% 60%,rgba(53,224,160,.055),transparent 28%),
+    var(--bg);
+  font-family:Inter,Arial,sans-serif;
+  overflow-x:hidden;
+}
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1624397669361071');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1624397669361071&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index:10;
+}
+
+.bg-grid{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.17;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:55px 55px;
+}
+
+.market-line{
+  position:fixed;
+  width:100%;
+  height:260px;
+  left:0;
+  top:42%;
+  opacity:.17;
+  pointer-events:none;
+}
+
+.market-line svg{width:100%;height:100%}
+
+.container{
+  width:min(100% - 30px,560px);
+  margin:auto;
+  padding:28px 0 22px;
+  position:relative;
+  z-index:2;
+}
+
+.gbm{
+  display:flex;
+  width:max-content;
+  margin:0 auto 25px;
+  align-items:center;
+  gap:6px;
+  color:var(--green);
+  text-decoration:none;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.19em;
+  padding:9px 13px;
+  border:1px solid rgba(53,224,160,.2);
+  border-radius:999px;
+  background:rgba(53,224,160,.045);
+  transition:.2s;
+}
+
+.gbm:hover{background:rgba(53,224,160,.1);transform:translateY(-1px)}
+
+.hero{
+  text-align:center;
+  padding:34px 21px 30px;
+  border:1px solid var(--line);
+  border-radius:30px;
+  background:linear-gradient(145deg,rgba(17,23,20,.92),rgba(10,14,12,.88));
+  box-shadow:0 25px 80px rgba(0,0,0,.42);
+  backdrop-filter:blur(16px);
+}
+
+.avatar-box{
+  width:124px;
+  height:124px;
+  margin:0 auto 22px;
+  position:relative;
+}
+
+.avatar-box:before{
+  content:"";
+  position:absolute;
+  inset:-16px;
+  border-radius:50%;
+  background:var(--green);
+  opacity:.13;
+  filter:blur(25px);
+}
+
+.avatar{
+  width:124px;
+  height:124px;
+  object-fit:cover;
+  display:block;
+  border-radius:50%;
+  border:2px solid rgba(53,224,160,.5);
+  background:#151c18;
+  position:relative;
+}
+
+.avatar-fallback{
+  position:absolute;
+  inset:0;
+  display:none;
+  place-items:center;
+  border-radius:50%;
+  background:linear-gradient(145deg,#16231d,#0c120f);
+  border:2px solid rgba(53,224,160,.5);
+  font:800 27px Sora,Arial;
+  color:var(--green);
+}
+
+h1{
+  font-family:Sora,Arial,sans-serif;
+  font-size:clamp(29px,8vw,45px);
+  line-height:1;
+  letter-spacing:-.045em;
+  margin-bottom:12px;
+}
+
+.tagline{
+  color:#aab5af;
+  font-size:14px;
+  margin-bottom:27px;
+}
+
+.cta{
+  min-height:58px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:11px;
+  border-radius:17px;
+  text-decoration:none;
+  color:#06100b;
+  background:linear-gradient(135deg,#43e8aa,#25ce91);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.055em;
+  box-shadow:0 13px 35px rgba(53,224,160,.18);
+  transition:transform .2s,box-shadow .2s;
+}
+
+.cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 18px 45px rgba(53,224,160,.3);
+}
+
+.cta svg{width:19px;height:19px}
+
+.section{
+  margin-top:15px;
+  padding:24px 18px;
+  border:1px solid var(--line);
+  border-radius:23px;
+  background:rgba(13,18,15,.83);
+}
+
+.section-title{
+  text-align:center;
+  font-size:10px;
+  text-transform:uppercase;
+  color:#7e8a84;
+  letter-spacing:.2em;
+  font-weight:800;
+  margin-bottom:15px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:9px;
+}
+
+.feature{
+  padding:14px 7px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:15px;
+  background:rgba(255,255,255,.018);
+}
+
+.feature-icon{
+  width:31px;
+  height:31px;
+  margin:0 auto 8px;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  color:var(--green);
+  background:rgba(53,224,160,.08);
+  font-size:14px;
+}
+
+.feature b{
+  display:block;
+  font-size:10px;
+  margin-bottom:4px;
+}
+
+.feature span{
+  display:block;
+  color:#707c76;
+  font-size:8px;
+  line-height:1.35;
+}
+
+.reviews{
+  display:grid;
+  gap:9px;
+}
+
+.review{
+  padding:16px;
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:16px;
+  background:rgba(255,255,255,.018);
+}
+
+.stars{
+  color:var(--green);
+  font-size:11px;
+  letter-spacing:2px;
+  margin-bottom:7px;
+}
+
+.review p{
+  color:#cbd4cf;
+  font-size:11px;
+  line-height:1.55;
+}
+
+.review small{
+  display:block;
+  color:#68746e;
+  font-size:9px;
+  margin-top:8px;
+}
+
+.disclaimer{
+  text-align:center;
+  color:#59645f;
+  font-size:8px;
+  line-height:1.5;
+  margin-top:15px;
+}
+
+.footer{
+  text-align:center;
+  color:#4f5b55;
+  font-size:9px;
+  letter-spacing:.1em;
+  padding:21px 0 0;
+}
+
+.fade{
+  animation:fade .7s ease both;
+}
+
+.d1{animation-delay:.08s}
+.d2{animation-delay:.16s}
+.d3{animation-delay:.24s}
+.d4{animation-delay:.32s}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(12px)}
+  to{opacity:1;transform:none}
+}
+
+@media(max-width:430px){
+  .container{width:min(100% - 20px,560px);padding-top:20px}
+  .hero{padding:29px 15px 25px}
+  .features{gap:6px}
+  .section{padding:21px 12px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .fade{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
 </head>
+
 <body>
 
-<canvas id="market-bg" aria-hidden="true"></canvas>
-<div class="grain" aria-hidden="true"></div>
+<div class="bg-grid"></div>
 
-<div class="page">
+<div class="market-line" aria-hidden="true">
+<svg viewBox="0 0 1200 260" preserveAspectRatio="none">
+<path d="M0 205 L80 190 L125 202 L190 160 L245 178 L310 110 L360 135 L420 95 L475 128 L535 80 L600 112 L655 62 L720 90 L780 45 L845 78 L910 30 L970 66 L1040 25 L1100 48 L1200 12"
+fill="none" stroke="#35e0a0" stroke-width="2"/>
+</svg>
+</div>
 
-  <a
-    class="gbm-label reveal"
-    style="--d:0s"
-    href="https://t.me/+Xd0Cn_fQXqY5NjM1"
-    target="_blank"
-    rel="noopener noreferrer sponsored"
-    aria-label="Ads managed by GBM — opens Telegram in a new tab"
-  >
-    <span>ADS MANAGED BY GBM</span>
-    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M7 17 17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
+<div class="container">
 
-  <main class="card">
+<a class="gbm fade" href="https://t.me/+Xd0Cn_fQXqY5NjM1" target="_blank" rel="noopener noreferrer">
+ADS MANAGED BY GBM
+<svg width="11" height="11" viewBox="0 0 24 24" fill="none">
+<path d="M7 17 17 7M17 7H9M17 7v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</a>
 
-    <div class="avatar-wrap reveal" style="--d:.08s">
-      <div class="avatar-glow" aria-hidden="true"></div>
-      <img
-        class="avatar"
-        src="/img/avatar.jpg"
-        width="128"
-        height="128"
-        loading="lazy"
-        decoding="async"
-        alt="VENOM X PANDAT channel emblem — placeholder avatar, replace with the live channel photo"
-      />
-    </div>
+<main class="hero fade d1">
 
-    <h1 class="brand reveal" style="--d:.16s">𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏</h1>
-    <p class="tagline reveal" style="--d:.22s">Free Trading Community</p>
+<div class="avatar-box">
+<img class="avatar" src="https://mannatbhai.netlify.app/img/avatar.jpg"
+alt="VENOM X PANDAT"
+onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';">
+<div id="avatarFallback" class="avatar-fallback">VXP</div>
+</div>
 
-    <a
-      class="cta reveal"
-      style="--d:.3s"
-      href="https://t.me/+kyQWuxv2b4EyMjc1"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Join the VENOM X PANDAT free community on Telegram"
-    >
-      <span>JOIN FREE COMMUNITY</span>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
+<h1>𝙑𝙀𝙉𝙊𝙈 𝙓 𝙋𝘼𝙉𝘿𝘼𝙏</h1>
+<p class="tagline">Free Trading Community</p>
 
-    <section class="feedback reveal" style="--d:.38s" aria-label="Community feedback">
-      <p class="feedback-label">Community feedback</p>
+<a class="cta" href="https://t.me/+0cHvMdz5WCoyNTQ1" target="_blank" rel="noopener noreferrer">
+<span>JOIN FREE COMMUNITY</span>
+<svg viewBox="0 0 24 24" fill="none">
+<path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
 
-      <div class="feedback-track">
-        <figure class="feedback-card" style="--sd:0s">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <blockquote>Clean calls and easy to understand setups. Been following for a while.</blockquote>
-          <figcaption>— Community Member</figcaption>
-        </figure>
+</main>
 
-        <figure class="feedback-card" style="--sd:.08s">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <blockquote>Really liked the market updates and trade explanations.</blockquote>
-          <figcaption>— Trader</figcaption>
-        </figure>
+<section class="section fade d2">
+<div class="section-title">Inside the community</div>
 
-        <figure class="feedback-card" style="--sd:.16s">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <blockquote>Simple channel, useful market insights, no unnecessary noise.</blockquote>
-          <figcaption>— Community Member</figcaption>
-        </figure>
+<div class="features">
+<div class="feature">
+<div class="feature-icon">◈</div>
+<b>Market Updates</b>
+<span>Simple market-focused content</span>
+</div>
 
-        <figure class="feedback-card" style="--sd:.24s">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <blockquote>Straightforward breakdowns, nothing overhyped. Worth a look.</blockquote>
-          <figcaption>— Trader</figcaption>
-        </figure>
-      </div>
+<div class="feature">
+<div class="feature-icon">⌁</div>
+<b>Trade Setups</b>
+<span>Charts and educational breakdowns</span>
+</div>
 
-      <p class="feedback-disclaimer">Sample feedback shown for illustration.</p>
-    </section>
+<div class="feature">
+<div class="feature-icon">↗</div>
+<b>Community</b>
+<span>Learn and discuss with traders</span>
+</div>
+</div>
+</section>
 
-  </main>
+<section class="section fade d3">
+<div class="section-title">Community feedback</div>
 
-  <footer class="site-footer reveal" style="--d:.46s">© 2026 GBM ADS</footer>
+<div class="reviews">
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>Clean calls and easy to understand setups. Been following for a while.</p>
+<small>— Community Member</small>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>Really liked the market updates and trade explanations.</p>
+<small>— Trader</small>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>Simple channel, useful market insights, no unnecessary noise.</p>
+<small>— Community Member</small>
+</div>
+
+<div class="review">
+<div class="stars">★★★★★</div>
+<p>Straightforward breakdowns, nothing overhyped. Worth a look.</p>
+<small>— Trader</small>
+</div>
 
 </div>
 
-<script src="/js/main.js" defer></script>
+<p class="disclaimer">Sample feedback shown for illustration. Trading involves risk.</p>
+</section>
+
+<footer class="footer fade d4">© 2026 GBM ADS</footer>
+
+</div>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1888446408788979');
+fbq('track','PageView');
+</script>
+
 </body>
 </html>
-<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="3781ec53-ae0d-4966-8646-b6f0e2816260" data-app-host="app.netlify.com"></script>
